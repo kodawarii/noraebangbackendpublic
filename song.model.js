@@ -40,6 +40,6 @@ let Songs = new Schema({
     collection: 'song'
 });
 
-console.log("WORKING INSIDE SONG MODEL");
+//console.log("Server Model Working");
 
 module.exports = mongoose.model('Song', Songs);
