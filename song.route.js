@@ -23,7 +23,7 @@ songRoutes.route('/').get(function (req, res) {
   });
 });
 
-// GET :: SELECT * from Song ORDER BY Artist DESC
+// GET :: SELECT * from Song ORDER BY Artist ASC
 songRoutes.route('/artist_sort_asc').get(function(req, res){
   Song.find({}).sort({artist: -1}).exec(
     function(err, songs){
