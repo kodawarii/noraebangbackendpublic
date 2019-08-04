@@ -26,5 +26,5 @@ app.use(bodyParser.json());
 app.use('/song', songRoute);
 
 app.listen(PORT, function(){
-  console.log('Server is running on Port:',PORT);
+  console.log('PUBLIC Server is running on Port:', PORT);
 });
