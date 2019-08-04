@@ -2,12 +2,16 @@
  * server.js 
  * For Public Node/Express Backend Web Application
  * This is [DEV]
+ * 
+ * For heroku logs:
+ * heroku logs -t --app calm-anchorage-40334
  */
 
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const PORT = 4000;
+//const PORT = 4000; // Dev
+const PORT = process.env.PORT || 3000; // Prod
 const cors = require('cors');
 const mongoose = require('mongoose');
 const config = require('./DB.js');
